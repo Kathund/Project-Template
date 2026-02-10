@@ -12,7 +12,7 @@
 
 To get started, [Use this template](https://github.com/new?template_name=Project-Template&template_owner=Kathund).
 
-This project uses [Bun](https://bun.sh) as it's run time. If you would prefer to use [node.js](https://nodejs.org) wit9h
+This project uses [Bun](https://bun.sh) as it's run time. If you would prefer to use [node.js](https://nodejs.org) with
 [pnpm](https://pnpm.io/) consider checking out the other branches of this repository.
 
 ### ### Running
