@@ -15,7 +15,8 @@
     "prettier:check": "bunx prettier --check .",
     "eslint:check": "bunx eslint . ",
     "eslint": "bun eslint:check --fix",
-    "build": "bunx tsc --build"
+    "build": "bunx tsc --build",
+    "check": "bun prettier && bun eslint && bun run build"
   },
   "dependencies": {
     "chalk": "^5.6.2",
