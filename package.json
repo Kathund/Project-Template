@@ -3,41 +3,41 @@
   "module": "index.ts",
   "type": "module",
   "engines": {
-    "bun": ">=1.3.13",
-    "node": "forbidden, use bun instead",
-    "pnpm": "forbidden, use bun instead",
-    "npm": "forbidden, use bun instead",
-    "yarn": "forbidden, use bun instead"
+    "node": ">=24.0.0",
+    "pnpm": ">=11.1.2",
+    "npm": "forbidden, use pnpm instead",
+    "yarn": "forbidden, use pnpm instead",
+    "bun": "forbidden, use pnpm instead"
   },
+  "packageManager": "pnpm@11.1.2",
   "scripts": {
-    "start": "bun run index.ts",
-    "prettier": "bunx prettier --write .",
-    "prettier:check": "bunx prettier --check .",
-    "eslint:check": "bunx eslint . ",
-    "eslint": "bun eslint:check --fix",
-    "build": "bunx tsc --build",
-    "check": "bun prettier && bun eslint && bun run build"
+    "start": "pnpm exec tsx index.ts",
+    "prettier": "pnpm exec prettier --write .",
+    "prettier:check": "pnpm exec prettier --check .",
+    "eslint:check": "pnpm exec eslint . ",
+    "eslint": "pnpm eslint:check --fix",
+    "build": "pnpm exec tsc --build",
+    "check": "pnpm prettier && pnpm eslint && pnpm run build"
   },
   "dependencies": {
     "chalk": "6.0.1",
+    "dotenv": "18.0.4",
     "node-cache": "5.1.2",
     "winston": "3.19.0"
   },
   "devDependencies": {
     "@j4cobi/eslint-plugin-sort-imports": "1.0.2",
     "@stylistic/eslint-plugin": "5.10.0",
-    "@types/bun": "1.3.13",
     "@types/eslint": "9.6.1",
+    "@types/node": "26.6.3",
     "eslint": "10.11.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-typescript": "4.4.5",
     "eslint-plugin-import": "2.32.0",
     "globals": "17.13.0",
     "prettier": "3.9.9",
+    "tsx": "4.23.15",
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.0"
-  },
-  "trustedDependencies": [
-    "unrs-resolver"
-  ]
+  }
 }

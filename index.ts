@@ -5,6 +5,13 @@
  */
 import './src/Private/Logger.ts';
 
+/*
+ * Logger should always be imported second in your main file (after the logger)
+ * You want to be able to load envirement variables before loading any code that might need them
+ * Not loading them before will cause issues where envirement variables will be undefined
+ */
+import 'dotenv/config';
+
 import Application from './src/Application.ts';
 
 const application = new Application();

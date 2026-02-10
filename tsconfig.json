@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["bun"],
+    "types": ["node"],
     "allowJs": false,
     "declaration": true,
     "esModuleInterop": true,
