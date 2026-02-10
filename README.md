@@ -15,7 +15,7 @@ To get started, [Use this template](https://github.com/new?template_name=Project
 This project uses [Bun](https://bun.sh) as it's run time. If you would prefer to use [node.js](https://nodejs.org) with
 [pnpm](https://pnpm.io/) consider checking out the other branches of this repository.
 
-### ### Running
+### Running
 
 Once you have your repository setup run the following command to install the required packages
 
