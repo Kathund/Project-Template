@@ -1,7 +1,7 @@
 class TemplateError extends Error {
   constructor(message: string) {
     super(message);
-    this.name = 'Tempalte';
+    this.name = 'Template';
   }
 
   override toString(): string {
