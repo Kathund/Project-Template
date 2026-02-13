@@ -1,9 +1,12 @@
 import CacheHandler from './Private/CacheHandler.js';
+import RequestHandler from './Private/Requests/RequestHandler.js';
 
 class Application {
   readonly cacheHandler: CacheHandler;
+  readonly requestHandler: RequestHandler;
   constructor() {
     this.cacheHandler = new CacheHandler();
+    this.requestHandler = new RequestHandler(this);
   }
 
   connect() {
