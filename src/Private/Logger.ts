@@ -6,6 +6,7 @@ import type { LogData } from '../Types/Misc.js';
 const otherLog = { level: 'other', background: chalk.bgCyan.black, color: chalk.reset.cyan };
 
 const logs: LogData[] = [
+  { level: 'discord', background: chalk.bgMagenta.black, color: chalk.reset.magenta },
   otherLog,
   { level: 'warn', background: chalk.bgYellow.black, color: chalk.reset.yellow },
   { level: 'error', background: chalk.bgRedBright.black, color: chalk.reset.redBright },
@@ -54,6 +55,13 @@ logs.forEach((log) => {
     transports: [new transports.File({ level: log.level, filename: `./logs/${log.level}.log` }), combinedTransport]
   });
 });
+
+console.discord = (message: string): void => {
+  const log = logs.find((log) => log.level === 'discord') || otherLog;
+  logSomething(message, log);
+  const logger = loggers[log.level];
+  if (logger) logger.log(log.level, message);
+};
 
 console.other = (message: string): void => {
   const log = logs.find((log) => log.level === 'other') || otherLog;

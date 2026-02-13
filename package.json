@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "chalk": "^6.0.0",
+    "discord.js": "^14.27.0",
     "node-cache": "^5.1.2",
     "winston": "^3.19.0"
   },
