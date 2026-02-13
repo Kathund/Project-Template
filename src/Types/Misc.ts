@@ -2,6 +2,7 @@ import type { ChalkInstance } from 'chalk';
 
 declare global {
   export interface Console {
+    discord: (message: string) => void;
     other: (message: string) => void;
   }
 }
