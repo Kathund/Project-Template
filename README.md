@@ -43,3 +43,51 @@ checks with the following command
 ```bash
 bun check
 ```
+
+## Discord.js
+
+This branch provides an template for discord bot's built using discord.js
+
+### Commands and Button Groups
+
+Commands and buttons are grouped into three types
+
+#### General
+
+These commands/buttons can be run by anyone and don't require any permission checks. If it's a command it will be loaded
+
+#### Guild
+
+These commands/buttons can be run inside a guiild. If it's not inside a guild it will throw and error and not reach the
+execute stage
+
+There are no permission checks on it so anyone can execute these
+
+The commands require the application to be installed to the guild for them to load
+
+#### Admin
+
+These commands/buttons can be ran anywhere but require the application to be installed to the user and not the guild
+
+When running these commands/buttons it checks that the user either owns the application or that the user is in the Team
+that owns the application
+
+### Commands and Buttons Responses
+
+When running a command there can be two types of responses. When clicking a button theres also a third response type
+
+#### Public
+
+This is your standed response. Everyone can see it and interact with it
+
+#### Ephemeral
+
+This is your hidden response. Only the person who interacted with it can view the response
+
+#### Update
+
+<!-- prettier-ignore -->
+> [!WARNING]
+> This is button only and will not work for commands
+
+This is used to update the original reponse instead of replying to the interaction

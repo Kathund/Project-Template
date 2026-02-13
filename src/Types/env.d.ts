@@ -1,5 +1,6 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    TEMPLATE_ENV: string;
+    DISCORD_TOKEN: string;
+    DISCORD_LOGS_CHANNEL: string;
   }
 }
