@@ -23,6 +23,14 @@ Once you have your repository setup run the following command to install the req
 bun install
 ```
 
+I heavily suggest you run
+
+```
+bun update
+```
+
+To update the packages as there is a high chance of them being out of date.
+
 Once the packages are installed you can run the following command to run the project
 
 ```bash
