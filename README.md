@@ -25,7 +25,7 @@ bun install
 
 I heavily suggest you run
 
-```
+```bash
 bun update
 ```
 
