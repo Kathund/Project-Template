@@ -1,4 +1,4 @@
-import type { RequestOptions } from '../../Types/Requests.js';
+import type { RequestOptions } from '../../Types/Requests.ts';
 
 class RequestData {
   data: any;

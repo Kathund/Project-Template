@@ -1,7 +1,7 @@
-import RequestData from './RequestData.js';
-import TemplateError from '../Error.js';
-import type Application from '../../Application.js';
-import type { RequestOptions } from '../../Types/Requests.js';
+import RequestData from './RequestData.ts';
+import TemplateError from '../Error.ts';
+import type Application from '../../Application.ts';
+import type { RequestOptions } from '../../Types/Requests.ts';
 
 class RequestHandler {
   readonly Application: Application;

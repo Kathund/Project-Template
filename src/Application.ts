@@ -1,5 +1,5 @@
-import CacheHandler from './Private/CacheHandler.js';
-import RequestHandler from './Private/Requests/RequestHandler.js';
+import CacheHandler from './Private/CacheHandler.ts';
+import RequestHandler from './Private/Requests/RequestHandler.ts';
 
 class Application {
   readonly cacheHandler: CacheHandler;

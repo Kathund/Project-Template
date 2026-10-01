@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { Logger, createLogger, format, transports } from 'winston';
-import { TitleCase } from '../Utils/StringUtils.js';
-import type { LogData } from '../Types/Misc.js';
+import { TitleCase } from '../Utils/StringUtils.ts';
+import type { LogData } from '../Types/Misc.ts';
 
 const otherLog = { level: 'other', background: chalk.bgCyan.black, color: chalk.reset.cyan };
 
@@ -51,7 +51,7 @@ logs.forEach((log) => {
         return `[${getCurrentTime()}] ${TitleCase(log.level)} > ${message}`;
       })
     ),
-    transports: [new transports.File({ level: log.level, filename: `./logs/${log.level}.log` }), combinedTransport]
+    transports: [new transports.File({ level: log.level, filename: `./data/logs/${log.level}.log` }), combinedTransport]
   });
 });
 
